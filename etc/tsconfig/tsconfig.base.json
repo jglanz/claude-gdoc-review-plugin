@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "lib": [
+      "ESNext"
+    ],
+    "allowJs": false,
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "composite": true,
+    "incremental": true,
+    "noFallthroughCasesInSwitch": false,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "disableSizeLimit": false,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "sourceMap": false,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strictNullChecks": false,
+    "strict": false,
+    "preserveWatchOutput": true,
+    "target": "ES2022",
+    "types": ["node", "jest"],
+    "paths": {
+      "claude-gdoc-review-plugin": [
+        "./src"
+      ],
+      "claude-gdoc-review-plugin/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "lib",
+    "dist",
+    "target",
+    "node_modules",
+    "**/*.js",
+    "**/lib/**",
+    "**/dist/**",
+    "**/target/**",
+    "**/node_modules/**"
+  ]
+}

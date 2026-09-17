@@ -1,0 +1,17 @@
+{
+  "session_id": "session-fixture",
+  "transcript_path": "/tmp/gdoc-review-fixture/transcript.jsonl",
+  "cwd": "/tmp/gdoc-review-fixture",
+  "permission_mode": "plan",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "mcp__gworkspace-personal__update_drive_file",
+  "tool_input": {
+    "file_id": "1FixtureDocIdAbCdEfGhIjKlMnOpQrStUvWxYz01",
+    "content": "# Fixture plan\n\nCache the results in Redis.\n",
+    "source_format": "md",
+    "mode": "replace",
+    "file_path": null
+  },
+  "tool_use_id": "toolu_mcp_1",
+  "tool_response": "Successfully updated file 'FixturePlan'\nFile ID: 1FixtureDocIdAbCdEfGhIjKlMnOpQrStUvWxYz01\nMode: replace\nReplaced content"
+}

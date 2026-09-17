@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.cjs.json",
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "composite": true,
+    "sourceMap": true,
+    "inlineSourceMap": false
+  }
+}

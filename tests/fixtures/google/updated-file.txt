@@ -1,0 +1,5 @@
+Successfully updated file 'MySpecialPlan'.
+
+File ID: 1AbCdEfGhIjKlMnOpQrStUvWxYz0123456789
+Link: https://docs.google.com/document/d/1AbCdEfGhIjKlMnOpQrStUvWxYz0123456789/edit
+Replaced content (4112 bytes, source format: md).

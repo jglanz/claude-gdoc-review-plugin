@@ -1,0 +1,13 @@
+{
+  "session_id": "session-fixture",
+  "transcript_path": "/tmp/gdoc-review-fixture/transcript.jsonl",
+  "cwd": "/tmp/gdoc-review-fixture",
+  "permission_mode": "plan",
+  "hook_event_name": "PreToolUse",
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "rm -rf /tmp/gdoc-review-fixture",
+    "description": "Remove a directory"
+  },
+  "tool_use_id": "toolu_bash_2"
+}

@@ -1,0 +1,41 @@
+{
+  "session_id": "session-fixture",
+  "transcript_path": "/tmp/gdoc-review-fixture/transcript.jsonl",
+  "cwd": "/tmp/gdoc-review-fixture",
+  "permission_mode": "plan",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "AskUserQuestion",
+  "tool_input": {
+    "questions": [
+      {
+        "header": "GDoc Review",
+        "question": "Google Doc Plan Review\nhttps://docs.google.com/document/d/1FixtureDocIdAbCdEfGhIjKlMnOpQrStUvWxYz01/edit\nRevision 1 synced · 0 addressed · 0 open. How should we proceed?",
+        "multiSelect": false,
+        "options": [
+          {
+            "label": "Approve and Use Auto Mode",
+            "description": "Exit plan mode and auto-accept edits while implementing."
+          },
+          {
+            "label": "Approve Manual Mode",
+            "description": "Exit plan mode and approve each edit manually."
+          },
+          {
+            "label": "Check Google Doc for new comments and changes",
+            "description": "Re-read the Doc for new comments and reviewer edits, then ask again."
+          },
+          {
+            "label": "Do something else",
+            "description": "Stay in plan mode and follow an instruction you give instead."
+          }
+        ]
+      }
+    ]
+  },
+  "tool_use_id": "toolu_menu_3",
+  "tool_response": {
+    "answers": {
+      "Google Doc Plan Review\nhttps://docs.google.com/document/d/1FixtureDocIdAbCdEfGhIjKlMnOpQrStUvWxYz01/edit\nRevision 1 synced · 0 addressed · 0 open. How should we proceed?": "Add a rollback section before we approve"
+    }
+  }
+}

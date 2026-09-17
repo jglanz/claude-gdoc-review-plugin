@@ -1,0 +1,13 @@
+{
+  "session_id": "session-fixture",
+  "transcript_path": "/tmp/gdoc-review-fixture/transcript.jsonl",
+  "cwd": "/tmp/gdoc-review-fixture",
+  "permission_mode": "plan",
+  "hook_event_name": "PreToolUse",
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "node \"/plugins/claude-gdoc-review-plugin/dist/gdoc-review.cjs\" init --plan /tmp/gdoc-review-fixture/plans/fixture-plan.md --kind personal --path \"code/claude/wip/FixturePlan\"",
+    "description": "Start a Google Doc plan review"
+  },
+  "tool_use_id": "toolu_bash_1"
+}

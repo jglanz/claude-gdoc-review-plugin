@@ -1,0 +1,17 @@
+{
+  "session_id": "session-fixture",
+  "transcript_path": "/tmp/gdoc-review-fixture/transcript.jsonl",
+  "cwd": "/tmp/gdoc-review-fixture",
+  "permission_mode": "plan",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "mcp__gworkspace-personal__import_to_google_doc",
+  "tool_input": {
+    "file_name": "FixturePlan",
+    "content": "# Fixture plan\n\nCache the results in Redis.\n",
+    "source_format": "md",
+    "folder_id": "folder-fixture-1",
+    "file_path": null
+  },
+  "tool_use_id": "toolu_mcp_2",
+  "tool_response": "Successfully imported markdown as a Google Doc\nDocument ID: 1FixtureDocIdAbCdEfGhIjKlMnOpQrStUvWxYz01\nLink: https://docs.google.com/document/d/1FixtureDocIdAbCdEfGhIjKlMnOpQrStUvWxYz01/edit"
+}

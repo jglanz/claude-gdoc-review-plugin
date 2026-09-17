@@ -1,0 +1,17 @@
+{
+  "session_id": "session-fixture",
+  "transcript_path": "/tmp/gdoc-review-fixture/transcript.jsonl",
+  "cwd": "/tmp/gdoc-review-fixture",
+  "permission_mode": "plan",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "mcp__gworkspace-personal__manage_document_comment",
+  "tool_input": {
+    "action": "create",
+    "document_id": "1FixtureDocIdAbCdEfGhIjKlMnOpQrStUvWxYz01",
+    "comment_id": null,
+    "reply_id": null,
+    "comment_content": "🤖 Revision log — Claude Code replies here after every sync."
+  },
+  "tool_use_id": "toolu_mcp_3",
+  "tool_response": "Comment created\nComment ID: comment-log-1"
+}

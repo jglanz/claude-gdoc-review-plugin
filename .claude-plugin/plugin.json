@@ -1,0 +1,17 @@
+{
+  "name": "claude-gdoc-review-plugin",
+  "version": "0.1.0",
+  "description": "Plan approval as a Google Doc review round: sync the plan to a Doc, answer reviewer comments, custom approval menu",
+  "author": {
+    "name": "Jonathan Glanz"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jglanz/claude-gdoc-review-plugin",
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "google-docs",
+    "plan-review",
+    "workspace-mcp"
+  ]
+}

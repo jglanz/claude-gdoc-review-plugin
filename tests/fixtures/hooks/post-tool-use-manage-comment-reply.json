@@ -1,0 +1,17 @@
+{
+  "session_id": "session-fixture",
+  "transcript_path": "/tmp/gdoc-review-fixture/transcript.jsonl",
+  "cwd": "/tmp/gdoc-review-fixture",
+  "permission_mode": "plan",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "mcp__gworkspace-personal__manage_document_comment",
+  "tool_input": {
+    "action": "reply",
+    "document_id": "1FixtureDocIdAbCdEfGhIjKlMnOpQrStUvWxYz01",
+    "comment_id": "comment-c1",
+    "reply_id": null,
+    "comment_content": "🤖 Addressed in rev 2: the cache moved to Redis."
+  },
+  "tool_use_id": "toolu_mcp_4",
+  "tool_response": "Reply created\nReply ID: reply-1"
+}

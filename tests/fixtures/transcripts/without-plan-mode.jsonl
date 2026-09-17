@@ -1,0 +1,4 @@
+{"type":"user","message":{"role":"user","content":"hello"}}
+{ still not valid json
+{"type":"attachment","attachment":{"type":"plan_mode","isSubAgent":true,"planFilePath":"/tmp/sub-agent-only.md"}}
+{"type":"attachment","attachment":{"type":"plan_mode","isSubAgent":false}}

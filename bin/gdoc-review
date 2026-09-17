@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+const Path = require("path")
+const Assert = require("assert")
+const Fs = require("fs")
+
+// The committed esbuild bundle — the only runtime artifact of this plugin.
+const mainFile = Path.resolve(__dirname, "..", "dist", "gdoc-review.cjs")
+
+Assert.ok(Fs.existsSync(mainFile), `Main file not found @ ${mainFile}.`)
+
+// The bundle self-starts only when it IS the process entry point, so when it is
+// required from here the launcher runs the CLI itself.
+const { main } = require(mainFile)
+
+main().then(
+  code => {
+    process.exitCode = code
+  },
+  err => {
+    // The only `console` call in the repository, and deliberately outside the
+    // hook protocol: reaching here means the bundle's own `main` rejected, so
+    // there is no CLI left to route a diagnostic through and no hook JSON on
+    // stdout to corrupt. stderr is the one channel a launcher still has.
+    console.error(err)
+    process.exitCode = 1
+  }
+)

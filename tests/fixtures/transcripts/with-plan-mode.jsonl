@@ -1,0 +1,7 @@
+{"type":"user","message":{"role":"user","content":"plan something"}}
+{"type":"attachment","attachment":{"type":"plan_mode","isSubAgent":true,"planFilePath":"/tmp/sub-agent-plan.md"}}
+{"type":"attachment","attachment":{"type":"file","path":"/tmp/not-a-plan.md"}}
+{ this line is not valid json
+{"type":"attachment","attachment":{"type":"plan_mode","isSubAgent":false,"planFilePath":"/tmp/plans/first-plan.md"}}
+{"type":"assistant","message":{"role":"assistant","content":"drafting"}}
+{"type":"attachment","attachment":{"type":"plan_mode","isSubAgent":false,"planFilePath":"/tmp/plans/second-plan.md"}}
