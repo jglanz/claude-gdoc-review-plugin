@@ -27,7 +27,6 @@ coverage
 tsconfig.tsbuildinfo
 lib/
 out/
-dist/
 
 # Debug
 npm-debug.log*

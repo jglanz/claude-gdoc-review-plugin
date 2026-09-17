@@ -1,6 +1,6 @@
 name: "CI"
 
-# Lint + format + build + jest gate on every PR and default-branch push.
+# Lint + format + build + bundle-freshness + jest gate on every PR and default-branch push.
 
 on:
   pull_request:
@@ -51,6 +51,13 @@ jobs:
 
       - name: Build
         run: pnpm run build
+
+      # dist/gdoc-review.cjs is committed so a plain clone or marketplace
+      # install runs the plugin with no install step. A rebuild that changes it
+      # means the committed bundle does not match src/ — fail rather than ship
+      # a stale runtime.
+      - name: Check committed bundle is fresh
+        run: git diff --exit-code -- dist/
 
       - name: Test
         env:

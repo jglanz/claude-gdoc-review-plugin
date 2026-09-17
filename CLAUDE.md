@@ -1,9 +1,9 @@
 # claude-gdoc-review-plugin
 
 Claude Code plugin: plan approval as a Google Doc review round (sync the plan
-into a Doc, answer reviewer comments, custom approval menu). Runtime = one built
-bundle, `dist/gdoc-review.cjs`, invoked by `hooks/hooks.json` and by the model
-through Bash.
+into a Doc, answer reviewer comments, custom approval menu). Runtime = one
+committed bundle, `dist/gdoc-review.cjs`, invoked by `hooks/hooks.json` and by
+the model through Bash.
 
 **Binding companion:** [`STYLE.md`](STYLE.md) — every rule there applies to all
 new code.
@@ -27,8 +27,8 @@ PATH (and says so and exits 0 when it is not, so CI never depends on it). That
 plain invocation is the gate: `--strict` is not used, because this contributor
 file lives at the plugin root and is not shipped context.
 
-`dist/gdoc-review.cjs` is a build output, ignored by git: after any `src/`
-change run `pnpm build` before using the plugin from this checkout.
+`dist/gdoc-review.cjs` is committed: after any `src/` change run `pnpm build`
+and include the regenerated bundle; CI fails on a stale bundle.
 
 ## Layout
 

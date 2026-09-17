@@ -51,19 +51,18 @@ formatting:
 
 ## Install
 
-Clone the repository, build the runtime once, then point Claude Code at the
-checkout:
+From a checkout, for development or daily use:
 
 ```bash
-git clone https://github.com/jglanz/claude-gdoc-review-plugin
-cd claude-gdoc-review-plugin
-pnpm install && pnpm build
-claude --plugin-dir "$PWD"
+claude --plugin-dir /path/to/claude-gdoc-review-plugin
 ```
 
-The runtime is the single bundle `dist/gdoc-review.cjs`, which is a build output
-and not committed, so a checkout needs that one build before the hooks can run.
-Rebuild after pulling changes.
+Or install it from git through a local marketplace entry pointing at
+`https://github.com/jglanz/claude-gdoc-review-plugin`.
+
+No `pnpm install` is needed to _use_ the plugin: the runtime is the single
+committed bundle `dist/gdoc-review.cjs`, so a plain clone or marketplace install
+runs as is.
 
 ## Usage
 
@@ -437,10 +436,10 @@ pnpm format  # prettier
 pnpm validate  # claude plugin validate . (a no-op when the CLI is absent)
 ```
 
-`dist/gdoc-review.cjs` is the only runtime artifact. It is a build output
-(ignored by git), so after any `src/` change run `pnpm build` before exercising
-the plugin from this checkout; `pnpm test` rebuilds it first for the same
-reason.
+`dist/gdoc-review.cjs` is the only runtime artifact and it is **committed**: a
+plain clone or marketplace install must run with no `pnpm install`. After any
+`src/` change run `pnpm build` and include the regenerated bundle in the same
+change — CI fails on a stale bundle (`git diff --exit-code -- dist/`).
 
 Conventions are binding: [`CLAUDE.md`](CLAUDE.md) for the repository rules,
 [`STYLE.md`](STYLE.md) for the TypeScript style laws (the mechanical subset is
